@@ -12,13 +12,13 @@ object Dependencies {
   val jug = "com.fasterxml.uuid" % "java-uuid-generator" % "3.1.3"
   val jerseyServlet = "com.sun.jersey" % "jersey-servlet" % "1.15"
   val jerseyCore = "com.sun.jersey" % "jersey-core" % "1.15"
-  val kafka = "org.apache.kafka" % "kafka_2.11" % "0.8.2.2" exclude("javax.jms", "jms") exclude("com.sun.jdmk", "jmxtools") exclude("com.sun.jmx", "jmxri")
+  val kafka = "org.apache.kafka" % "kafka_2.10" % "0.8.2.2" exclude("javax.jms", "jms") exclude("com.sun.jdmk", "jmxtools") exclude("com.sun.jmx", "jmxri")
   val logback = "ch.qos.logback" % "logback-classic" % "1.1.1"
-  val mysqlAsync =  "com.github.mauricio" % "mysql-async_2.11" % "0.2.18"
+  val mysqlAsync =  "com.github.mauricio" % "mysql-async_2.10" % "0.2.18"
   val mysqlBinlogConnectorJava = "com.github.shyiko" % "mysql-binlog-connector-java" % "0.2.4"
   val rsApi = "javax.ws.rs" % "javax.ws.rs-api" % "2.0.1"
-  val scalaCompiler = "org.scala-lang" % "scala-compiler" % "2.11.2"
-  val scalaReflect = "org.scala-lang" % "scala-reflect" % "2.11.2"
+  val scalaCompiler = "org.scala-lang" % "scala-compiler" % "2.10.4"
+  val scalaReflect = "org.scala-lang" % "scala-reflect" % "2.10.4"
   val scalaTest = "org.scalatest" %% "scalatest" % "2.2.1" % "test"
   val schemaRepoClient = "org.schemarepo" % "schema-repo-client" % "0.1.3"
   val schemaRepoServer = "org.schemarepo" % "schema-repo-server" % "0.1.3"
