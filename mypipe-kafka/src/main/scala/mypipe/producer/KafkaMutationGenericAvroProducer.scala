@@ -117,6 +117,18 @@ class KafkaMutationGenericAvroProducer(config: Config)
           if (v.isDefined) byteArrays.put(c.metadata.name, v.get)
         })
 
+      case (ColumnType.CHAR, colz) ⇒
+        colz.foreach(c ⇒ {
+          val v = c.valueOption[String]
+          if (v.isDefined) strings.put(c.metadata.name, v.get)
+        })
+
+      case (ColumnType.TINY, colz) ⇒
+        colz.foreach(c ⇒ {
+          val v = c.valueOption[Int]
+          if (v.isDefined) integers.put(c.metadata.name, v.get)
+        })
+
       case _ ⇒ // unsupported
     })
 

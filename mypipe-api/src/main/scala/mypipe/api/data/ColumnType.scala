@@ -41,6 +41,8 @@ object ColumnType extends Enum {
   val STRING = new EnumVal { val value = 254; val str = "text" }
   val GEOMETRY = new EnumVal { val value = 255; val str = "geometry" }
 
+  val CHAR = new EnumVal { val value = 256; val str = "char" }
+
   val UNKNOWN = new EnumVal { val value = -9999; val str = "unknown" }
 
   def typeByCode(code: Int): Option[ColumnType.EnumVal] = values.find(_.value == code)

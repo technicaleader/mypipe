@@ -1,3 +1,5 @@
+This is version run on Scala 2.10.4 and JDK 1.7
+
 # mypipe
 mypipe latches onto a MySQL server with binary log replication enabled and
 allows for the creation of pipes that can consume the replication stream and
