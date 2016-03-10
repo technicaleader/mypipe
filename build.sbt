@@ -2,7 +2,7 @@ import Dependencies._
 
 lazy val commonSettings = Seq(
   name := "mypipe",
-  version := "0.0.1",
+  version := "1.0.0",
   organization := "mypipe",
   scalaVersion := "2.10.4",
   scalacOptions += "-target:jvm-1.7",
@@ -28,6 +28,7 @@ lazy val apiDependencies = Seq(
   scalaCompiler,
   scalaReflect,
   scalaTest,
+  slf4jApi,
   typesafeConfig
 )
 
